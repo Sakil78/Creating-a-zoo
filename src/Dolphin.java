@@ -1,5 +1,5 @@
 // Dolphin.java
-public class Dolphin extends Animal {
+public class Dolphin extends Animal implements Eat, Swim {
     private String color;
     private double swimmingSpeed;
 
@@ -23,9 +23,21 @@ public class Dolphin extends Animal {
         this.swimmingSpeed = swimmingSpeed;
     }
 
-    // Implement the second Eat interface method
+    // Swimming functionality (from Swim interface)
+    @Override
+    public void swim() {
+        System.out.println(getNameOfAnimal() + " is swimming at speed " + swimmingSpeed + ".");
+    }
+
+    // Customize eatingFood() behavior
+    @Override
+    public void eatingFood() {
+        System.out.println("Dolphin: I am eating delicious fish");
+    }
+
+    // Implement the remaining Eat method
     @Override
     public void eatingCompleted() {
-        System.out.println(getNameOfAnimal() + " has finished eating.");
+        System.out.println("I have eaten fish");
     }
 }

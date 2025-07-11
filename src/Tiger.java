@@ -1,5 +1,5 @@
 // Tiger.java
-public class Tiger extends Animal {
+public class Tiger extends Animal implements Eat, Walk {
     private int numberOfStripes;
     private double speed;
     private double soundLevelOfRoar;
@@ -31,9 +31,21 @@ public class Tiger extends Animal {
         this.soundLevelOfRoar = soundLevelOfRoar;
     }
 
-    // Implement the second Eat interface method
+    // Walking functionality (from Walk interface)
+    @Override
+    public void walk() {
+        System.out.println(getNameOfAnimal() + " is walking on land at speed " + speed + ".");
+    }
+
+    // Eat interface methods
+    @Override
+    public void eatingFood() {
+        // Inherited behavior is fine, or customize if desired:
+        super.eatingFood(); // prints "The animal: Tiger is eating."
+    }
+
     @Override
     public void eatingCompleted() {
-        System.out.println(getNameOfAnimal() + " has finished eating.");
+        System.out.println("Tiger: I have eaten meat");
     }
 }

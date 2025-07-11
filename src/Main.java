@@ -98,25 +98,25 @@ public class Main {
 
                             case 2: // Display properties
                                 System.out.println("Tiger Properties:");
-                                System.out.println(" Stripes: " + tigerObject.getNumberOfStripes());
+                                System.out.println(" Number of Stripes: " + tigerObject.getNumberOfStripes());
                                 System.out.println(" Speed: " + tigerObject.getSpeed() + " mph");
-                                System.out.println(" Roar Level: " + tigerObject.getSoundLevelOfRoar());
+                                System.out.println(" Roar Sound Level: " + tigerObject.getSoundLevelOfRoar());
                                 System.out.println(" Weight: " + tigerObject.getWeight());
                                 System.out.println(" Height: " + tigerObject.getHeight());
                                 System.out.println(" Age: " + tigerObject.getAge());
                                 break;
 
-                            case 3: // Movement
+                            case 3: // Display movement
                                 tigerObject.walking();
                                 break;
 
-                            case 4: // Eating
+                            case 4: // Display eating
                                 tigerObject.eatingFood();
                                 tigerObject.eatingCompleted();
                                 break;
 
                             default:
-                                System.out.println("Not supported");
+                                System.out.println("Invalid choice, not supported.");
                         }
 
                         System.out.println("Continue with Tiger? (1 = yes, 2 = no):");
@@ -133,7 +133,7 @@ public class Main {
                             case 1: // Set properties
                                 System.out.print("Enter color: ");
                                 dolphinObject.setColor(keyboard.next());
-                                System.out.print("Enter swimming speed: ");
+                                System.out.print("Enter swimming speed (mph): ");
                                 dolphinObject.setSwimmingSpeed(keyboard.nextDouble());
                                 System.out.print("Enter weight: ");
                                 dolphinObject.setWeight(keyboard.nextInt());
@@ -152,17 +152,17 @@ public class Main {
                                 System.out.println(" Age: " + dolphinObject.getAge());
                                 break;
 
-                            case 3: // Movement
+                            case 3: // Display movement
                                 dolphinObject.swimming();
                                 break;
 
-                            case 4: // Eating
+                            case 4: // Display eating
                                 dolphinObject.eatingFood();
                                 dolphinObject.eatingCompleted();
                                 break;
 
                             default:
-                                System.out.println("Not supported");
+                                System.out.println("Invalid choice, not supported.");
                         }
 
                         System.out.println("Continue with Dolphin? (1 = yes, 2 = no):");
@@ -193,7 +193,7 @@ public class Main {
         System.out.println("1. Tiger");
         System.out.println("2. Dolphin");
 
-        System.out.println("Enter choice of animal:");
+        System.out.println("Enter choice of animal (1-2):");
         choiceGivenByUser = keyboard.nextInt();
         return choiceGivenByUser;
     }

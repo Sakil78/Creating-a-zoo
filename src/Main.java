@@ -89,7 +89,7 @@ public class Main {
                                 System.out.print("Enter speed (mph): ");
                                 tigerObject.setSpeed(keyboard.nextDouble());
                                 System.out.print("Enter roar sound level: ");
-                                tigerObject.setSoundLevelOfRoar(keyboard.nextDouble());
+                                tigerObject.setSoundLevel(keyboard.nextDouble());
                                 System.out.print("Enter weight: ");
                                 tigerObject.setWeight(keyboard.nextInt());
                                 System.out.print("Enter height: ");
@@ -102,7 +102,7 @@ public class Main {
                                 System.out.println("Tiger Properties:");
                                 System.out.println(" Number of Stripes: " + tigerObject.getNumberOfStripes());
                                 System.out.println(" Speed: " + tigerObject.getSpeed() + " mph");
-                                System.out.println(" Roar Sound Level: " + tigerObject.getSoundLevelOfRoar());
+                                System.out.println(" Roar Sound Level: " + tigerObject.getSoundLevel());
                                 System.out.println(" Weight: " + tigerObject.getWeight());
                                 System.out.println(" Height: " + tigerObject.getHeight());
                                 System.out.println(" Age: " + tigerObject.getAge());

@@ -2,7 +2,7 @@
 public class Tiger extends Animal implements Eat, Walk {
     private int numberOfStripes;
     private double speed;
-    private double soundLevelOfRoar;
+    private double soundLevel;
 
     // Default constructor sets the inherited name field to "Tiger"
     public Tiger() {
@@ -24,17 +24,17 @@ public class Tiger extends Animal implements Eat, Walk {
         this.speed = speed;
     }
 
-    public double getSoundLevelOfRoar() {
-        return soundLevelOfRoar;
+    public double getSoundLevel() {
+        return soundLevel;
     }
-    public void setSoundLevelOfRoar(double soundLevelOfRoar) {
-        this.soundLevelOfRoar = soundLevelOfRoar;
+    public void setSoundLevel(double soundLevel) {
+        this.soundLevel = soundLevel;
     }
 
     // Walking functionality (from Walk interface)
     @Override
     public void walking() {
-        System.out.println("Tiger: I am moving at the speed of " + getSpeed() + " mph");
+        System.out.println("Tiger: I am moving at the speed of " + speed + " mph");
     }
 
     // Eat interface methods

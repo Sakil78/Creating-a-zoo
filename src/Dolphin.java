@@ -25,8 +25,8 @@ public class Dolphin extends Animal implements Eat, Swim {
 
     // Swimming functionality (from Swim interface)
     @Override
-    public void swim() {
-        System.out.println(getNameOfAnimal() + " is swimming at speed " + swimmingSpeed + ".");
+    public void swimming() {
+        System.out.println("Dolphin: I am swimming at the speed of " + swimmingSpeed + " nautical miles per hour");
     }
 
     // Customize eatingFood() behavior

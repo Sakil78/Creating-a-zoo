@@ -76,7 +76,7 @@ public class Main {
         do {
             switch (animalChoiceMenu(keyboard)) {
                 case 1: // Tiger
-                    continueInnerLoop = 1;
+                    System.out.println("The animal which is chosen is: " + tigerObject.getNameOfAnimal());
                     do {
                         // Step 2: show details menu for tiger
                         menuChoice = animalDetailsManipulationMenu(keyboard, tigerObject);
@@ -125,7 +125,7 @@ public class Main {
                     break;
 
                 case 2: // Dolphin
-                    continueInnerLoop = 1;
+                    System.out.println("The animal which is chosen is: " + dolphinObject.getNameOfAnimal());
                     do {
                         // Step 2: show details menu for dolphin
                         menuChoice = animalDetailsManipulationMenu(keyboard, dolphinObject);

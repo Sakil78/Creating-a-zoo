@@ -33,8 +33,8 @@ public class Tiger extends Animal implements Eat, Walk {
 
     // Walking functionality (from Walk interface)
     @Override
-    public void walk() {
-        System.out.println(getNameOfAnimal() + " is walking on land at speed " + speed + ".");
+    public void walking() {
+        System.out.println("Tiger: I am moving at the speed of " + getSpeed() + " mph");
     }
 
     // Eat interface methods
